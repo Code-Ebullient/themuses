@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700&display=swap');
+
+:root {
+    --bk-color: rgba(0, 215, 178, .85);
+    --ff-font: 'Merriweather Sans', sans-serif;
+    --fw-light: 300;
+    --fw-reg: 400;
+    --fw-bold: 700;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--ff-font);
+    font-weight: var(--fs-body);
+}
+
+/* Nav */
+header {
+    background-color: var(--bk-color);
+    text-align: center;
+    /*
+    position: fixed;
+    z-index: 999;
+    */
+    width: 100%;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: var(--fs-h1);
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--bk-color);
+    width: 100%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin: var(--fs-body);
+    margin-left: var(--fs-body);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: var(--fs-h3);
+    text-transform: uppercase;
+}
+
+/*
+.Hamburger {
+    background: red;
+}
+
+
+.Hamburger,
+.Hamburger::before,
+.Hamburger::after {
+    display: block;
+    background: #ffffff;
+    height: .25rem;
+    width: 1rem;
+    position: relative;
+}
+
+.Hamburger::before,
+.Hamburger::after {
+    content: '';
+    position: absolute;
+}
+
+.Hamburger::before {
+    bottom: 7px;
+}
+
+.Hamburger::after {
+    top: 7px;
+}
+*/
+.container {
+    max-width: 1100px;
+    width: 90%;
+}
+
+.hero {
+    left: 50%;
+    top: 40%;
+    text-align: center;
+}
+
+.title__title {
+    color: #3f3b3b;
+    text-transform: uppercase;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 2rem;
+    /*
+    backface-visibility: hidden;
+    */
+    margin-bottom: 16px;
+}
+
+.btn:link,
+.btn:visited {
+    background-color: var(--bk-color);
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.col__img {
+    border: 1px solid black;
+    border-radius: 100px;
+    height: 100px;
+}
